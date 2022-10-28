@@ -10,7 +10,7 @@ public class Main {
         if (o instanceof Scanner) {
             scanner = ((Scanner) o);
         }
-
+        System.out.println("Введите число");
         if (scanner != null){
             scanner.nextInt();
 
