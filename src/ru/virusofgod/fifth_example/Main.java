@@ -1,36 +1,15 @@
-package ru.virusofgod.fourth_example;
+package ru.virusofgod.fifth_example;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-
 
         // ОсновнойТип<ТипПараметр>
         // ОсновнойТип<ТипПараметр, ТипПараметр2, ТипПараметр3>
 
-
-
-        ArrayList<Integer> numbers = new ArrayList(); // сохраняет Object
-
-        for (int i = 0; i < 10; i++) { //Сохраняет в коллекцию числа 10, 20 и. т. д. до 100
-            numbers.add(i * 10);
-            // numbers.add(i * 10.4f); нужно удалить быдлокод
-
-        }
-
-        int sum = 0;
-
-
-        for (Object o : numbers) {
-
-            sum = sum + (Integer) o;
-        }
-        System.out.println(sum);
-
-
-    /*
+      /*
 
       То что мы пишем в коде                               |       То как отработает компилятор
       ________________________________________________________________________________________________
@@ -45,6 +24,19 @@ public class main {
 
      */
 
+        HashMap<Integer, String> map =new HashMap<Integer, String>();
+        map.put(7, "Привет");
+        map.put(15, "Hellow");
 
+        ArrayList<String> listHellow = new ArrayList<>();
+        ArrayList<String> listBie = new ArrayList<>();
+        listHellow.add("Привет");
+        listHellow.add("HI");
+        listBie.add("Пока");
+        listBie.add("Goodbie");
+
+        ArrayList<ArrayList<String>> list = new ArrayList();
+        list.add(listHellow);
+        list.add(listBie);
     }
 }
