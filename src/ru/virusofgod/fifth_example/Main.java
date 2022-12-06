@@ -33,10 +33,17 @@ public class Main {
         listHellow.add("Привет");
         listHellow.add("HI");
         listBie.add("Пока");
-        listBie.add("Goodbie");
+        listBie.add("Good bie");
 
         ArrayList<ArrayList<String>> list = new ArrayList();
         list.add(listHellow);
         list.add(listBie);
+
+        for (ArrayList<String> spisok: list){
+            for(String S : spisok){
+                System.out.println(S);
+            }
+
+        }
     }
 }
