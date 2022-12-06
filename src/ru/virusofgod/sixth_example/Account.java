@@ -1,16 +1,16 @@
 package ru.virusofgod.sixth_example;
 
-public class Account {
+public class Account<T> {
 
-    private Object id;
+    private T id;
     private int sum;
 
-    public Account(Object id, int sum) {
+    public Account(T id, int sum) {
         this.id = id;
         this.sum = sum;
     }
 
-    public Object getId() {
+    public T getId() {
         return id;
     }
 
@@ -18,7 +18,7 @@ public class Account {
         return sum;
     }
 
-    public void setId(Object id) {
+    public void setId(T id) {
         this.id = id;
     }
 
