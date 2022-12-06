@@ -1,16 +1,16 @@
 package ru.virusofgod.sixth_example;
 
-public class Account<T> {
+public class Account implements Accountable<String>{
 
-    private T id;
+    private String id;
     private int sum;
 
-    public Account(T id, int sum) {
+    public Account(String id, int sum) {
         this.id = id;
         this.sum = sum;
     }
 
-    public T getId() {
+    public String getId() {
         return id;
     }
 
@@ -18,8 +18,9 @@ public class Account<T> {
         return sum;
     }
 
-    public void setId(T id) {
+    public void setId(String id) {
         this.id = id;
+
     }
 
     public void setSum(int sum) {
